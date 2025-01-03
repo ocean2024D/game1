@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fortnite</title>
+  <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to right top, #ffa20b, #3d3811, #455494, #a5a012, #dcdb00);    }
+
+    .box {
+      width:780px;
+      height: 20px;
+     
+      border-radius: 50%;
+      position: relative;
+   
+      box-shadow: rgb(80, 16, 4) 0px 2px 4px, rgb(255, 8, 8) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    }
+
+    .outside-image {
+ 
+      position: absolute;
+      top: -350px; 
+      left:50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      
+    }
+    @keyframes example {
+  50%  {background-color:rgb(10, 10, 38); left:200px; top:200px;}
+  100% {background-color:rgb(24, 82, 82); left:0px; top:0px;}
+}
+
+    .paraf {
+      position: absolute;
+      bottom: -0%; 
+      left: 50%;
+    letter-spacing: 5px;
+      transform: translateX(-50%);
+      width: 80%; 
+      text-align: center;
+      color: rgb(148, 124, 124); 
+      font-size: 20px;
+      padding: 10px;
+      z-index: 1000;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+     margin: 20px;
+      flex-direction: column;
+      background-color: rgba(15, 2, 2, 0.358);
+      font-size: 20px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+border-radius:20% 10% 3% 1%;
+    }
+
+    .container:hover .image {
+      transform: translateX(100px); 
+    }
+
+    .container.reverse:hover .image {
+      transform: translateX(-100px);
+    }
+
+
+    h2 {
+      animation-iteration-count: 3;
+      animation-name: example;
+      animation-duration: 4s;
+      padding: 20px;
+      text-align: center;
+      color: rgb(172, 65, 44);
+      font-size: 84px;
+      letter-spacing: 20px;
+      font-weight: 500;
+      font-family: "Sixtyfour", serif;    }
+
+    @media only screen and (max-width: 600px) {
+  h2{
+    padding: 30px;
+    font-size:30px;
+    
+  }
+  .box {
+      width:500px;
+      height: 200px;}
+    }
+    @media only screen and (max-width: 750px) {
+  h2{
+    margin: 10px;
+    font-size:35px;
+    text-align: center;
+  }
+  .outside-image {
+      z-index: 1000;
+      position: absolute;
+      top: -180px; 
+      left:50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      
+    }
+  .box {
+      width:500px;
+      height: 200px;
+
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>FORTNITE </h2>
+    <div class="paraf">  
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nesciunt laboriosam maxime veritatis, reprehenderit, sequi eveniet animi ab laborum nostrum modi, hic dignissimos.
+      </p>
+    </div>
+    <div class="box">
+      <img src="image copy 5.png" alt="Resim" class="outside-image">
+        </div>
+  </div>
+</body>
+</html>
